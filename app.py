@@ -36,10 +36,5 @@ def predict():
 
     return jsonify({'size': predicted_size})
 
-
-@app.route('/', methods=['GET'])
-def home():
-    return "ML API is running!"
-
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(debug=True)
